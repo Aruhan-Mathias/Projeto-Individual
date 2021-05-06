@@ -1,0 +1,19 @@
+:root {
+    --verde: rgb(50, 185, 45);
+    --branco: #FFF;
+    --verdeClaro: rgb(174, 248, 151);
+}
+
+
+/* Menu */
+
+#reserve a {
+    background-color: var(--verde);
+    color: white;
+    font-size: 20px;
+    padding: 15px 43px 0 0;
+    position: absolute;
+    top: 0;
+    height: 62px;
+    width: 150px;
+}

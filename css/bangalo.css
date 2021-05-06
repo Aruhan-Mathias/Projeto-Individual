@@ -1,0 +1,44 @@
+:root {
+    --verde: rgb(50, 185, 45);
+    --branco: #FFF;
+    --verdeClaro: rgb(174, 248, 151);
+}
+
+
+/* Bordas, Cores de Textos e BackGrounds */
+
+.textoBranco {
+    color: var(--branco);
+}
+
+.textoColorido {
+    color: var(--verde);
+}
+
+.textoAmarelo {
+    color: yellow;
+}
+
+.bordaVerde {
+    border: 1px solid var(--verde)
+}
+
+.borderBottom {
+    background-color: var(--verde);
+    height: 3px;
+    width: 25%;
+    margin: 0 auto;
+}
+
+.bordaAmarela {
+    border: 1px solid yellow;
+}
+
+.sublime {
+    color: var(--verde);
+    margin: 0 auto;
+}
+
+.bgVerde {
+    background-color: var(--verde);
+}

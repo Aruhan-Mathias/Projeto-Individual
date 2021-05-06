@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- 
+    VALIDAÇÃO CNPJ: PÁGINA 'RESERVAS.html' (JS LINKADO NO HEAD)
+    SETA LINHA: 117
+    ARTICLE UTILIZADO NA LINHA 176, 187, 198 E 214 (VALOR DE CADA QUARTO DA POUSADA)
+    FOOTER COM CSS: LINHA 224 A 234 (CSS LINKADO NA LINHA 22)
+ -->
+
+<head>
+
+    <title>Semente de Luz</title>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <!-- Teste -->
+    <link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="icon" href="img/logo.png" />
+    <link href="/resources/demos/style.css">
+    <!-- Fim Teste -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+
+<body>
+    <!-- Inicio Menu -->
+    <header>
+        <nav class="navbar text-right fixed-top navbar-expand-xl navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="img/logo-retangular-semente-de-luz.png" style="height: 35px;" alt="logotipo"></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao3">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="input-group d-none d-xl-flex" style="margin-left: 28.5%;width: 15%;">
+                <input class="form-control" type="text" placeholder="Pesquisar">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-success">Ok</button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navegacao3">
+
+                <ul class="navbar-nav ml-auto" style="margin-right: 120px;">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#topo ">Home</a>
+                    </li>
+                    <li class="nav-item d-xl-none bg-outline-success active">
+                        <a class="nav-link" href="reservas.html" style="color:rgb(38, 187, 38)">Reserve</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#idQuemSomos">Quem Somos</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Serviços</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#idQuartos">Quartos</a>
+                            <a class="dropdown-item" href="holistico.html">Terapia Holística</a>
+                        </div>
+                    </li>
+
+                    <div class="d-none d-xl-flex" id="reserve">
+                        <a class="nav-link" href="reservas.html">RESERVE</a>
+                    </div>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <!-- Final Menu -->
+
+    <main>
+        <div class="container-fluid" id="topo">
+
+            <div class="carousel slide" id="carousel-indicadores" data-ride="carousel">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-indicadores" data-slide-to="0"></li>
+                    <li data-target="#carousel-indicadores" data-slide-to="1"></li>
+                    <li data-target="#carousel-indicadores" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" style="height: 80vh;">
+                    <div class="carousel-item active">
+                        <img class="img-fluid w-100" src="img/138907133_923590418178063_4812030309134564982_n.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid w-100 h-100" src="img/carrossel2.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid w-100" src="img/4.jpg">
+                    </div>
+                </div>
+
+                <!-- Controles -->
+                <a class="carousel-control-prev" href="#carousel-indicadores" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-indicadores" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+            </div>
+            <!-- FIM Carrossel -->
+
+            <!-- Seta Voltar ao Topo -->
+            <a class="anime_inicial" href="#topo"><img src="img/seta-para-cima.png" id="setaTopo" style="width: 50px;" alt="Voltar ao Topo"></a>
+
+            <!-- Inicio Destaques -->
+
+            <div class="row text-center destaque">
+                <div class="col-12 mt-5 pt-4 pb-lg-5 pb-4 col-sm-12 col-md-12">
+                    <h1 class="display-4 text-center sublime">Destaques</h1>
+                    <div class="borderBottom"></div>
+                </div>
+            </div>
+
+            <div class="row mt-lg-1 destaque">
+
+                <div class="col-12 col-lg-4 p-lg-4 destaques">
+                    <p class="um">QUARTO <br>DE<br> VIDRO</p>
+                    <a href="bangalo.html" target="_blank"><img class="img-fluid" src="img/40409336_748602008805531_5572863280345317784_n.jpg" style="width: 100%; height: 100%;" alt="Destaques"></a>
+                </div>
+                <div class="col-12 col-lg-4 p-lg-4 destaques">
+                    <p class="dois">ESPAÇO <br>TERAPÊUTICO</p>
+                    <a href="holistico.html"><img class="img-fluid" src="img/holistico.jpg" style="width: 100%; height: 100%;" alt="Destaques"></a>
+                </div>
+                <div class="col-12 col-lg-4 p-lg-4 destaques">
+                    <p class="tres">CASA <br>NA<br> ÁRVORE</p>
+                    <a href="casaArvore.html"><img class="img-fluid" src="img/arvore.jpg" style="width: 100%; height: 100%;" alt="Destaques"></a>
+                </div>
+            </div>
+            <!-- FIM Destaques -->
+
+            <!-- Quem Somos -->
+            <div class="row pt-5 quemSomos" id="idQuemSomos">
+                <div class="col-12 col-lg-6 quemSomosBg">
+                    <h1 class="display-4 text-center pt-lg-5 textoBranco">Quem Somos</h1>
+                    <p class="lead text-center pt-5 textoBranco">Pousada Semente de Luz foi fundada com o intuito de fornecer qualidade, conexão com a natureza e conforto a todos os nossos hóspedes. Com forte diversidade, nós atendemos clientes de todas as regiões do País, de Norte a Sul. Oferecendo
+                        um ótimo serviço de quarto, massagens holísticas e muito mais...</p>
+                    <p class="text-center pt-lg-5 textoBranco dispEndereco1"><img class="dispEndereco1" src="img/Local-Icon.png" id="endereco1" style="width: 30px;" alt="Imagem Ponto Local">Rodovia Governador Cesar Cals de O. Filho, 1162, Monte Castelo, Ubajara-CE</p>
+                </div>
+                <aside class="col-12 col-lg-6 mt-md-0 quemSomosBg">
+                    <img class="img-fluid" src="img/chalet.png" alt="Foto da Pousada" style="margin: 0 auto;width: 100%;">
+                    <p class="text-center pt-lg-5 textoBranco dispEndereco2"><img class="dispEndereco2" src="img/Local-Icon.png" style="width: 30px;" alt="Imagem Ponto Local">Rodovia Governador Cesar Cals de O. Filho, 1162, Monte Castelo, Ubajara-CE</p>
+                </aside>
+            </div>
+            <!-- FIM Quem Somos -->
+            <!-- Hospedagem -->
+            <div class="row text-center destaque pt-5" id="idQuartos">
+                <div class="col-12 pt-lg-0 col-sm-12 col-md-12">
+                    <h1 class="display-4 text-center pt-lg-5 sublime">Quartos</h1>
+                    <div class="borderBottom"></div>
+                </div>
+            </div>
+
+
+            <div class="row mt-lg-5 destaque cards">
+                <div class="col-12 col-sm-6 col-lg-3 p-3 mt-5 w-25">
+                    <div class="card">
+                        <img class="card-img-top" src="img/arvore.jpg" style="height: 50%;">
+
+                        <div class=" card-body">
+                            <h3 class="card-title text-center">Chalé - Triplo</h3>
+                            <p class="card-subtitle text-muted">Uma Cama de Casal no Térreo Superior, Uma Cama de Solteiro no Térreo, Ventilador, TV, Frigobar, Banheiro Interno e Chuveiro Elétrico.</p>
+                            <article class="card-text text-right" style="font-size: x-large;"><small>R$:</small><strong>200,00</strong></article>
+                            <a class="btn btn-warning mb-3" href="reservas.html">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 p-3 mt-5 w-25">
+                    <div class="card">
+                        <a href="bangalo.html"><img class="card-img-top" src="img/100039400859_143741.jpg" style="height: 100%;"></a>
+                        <div class=" card-body">
+                            <h3 class="card-title text-center">Bangalô Superior</h3>
+                            <p class="card-subtitle text-muted">No Terceiro Aandar Com: Colchão Casal, TV, Frigobar, Ventilador e Banheiro Exterior no Segundo Térreo.</p>
+                            <article class="card-text text-right" style="font-size: x-large;"><small>R$:</small><strong>170,00</strong></article>
+                            <a class="btn btn-warning mb-3" href="reservas.html">Reservar</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 p-3 mt-5 w-25">
+                    <div class="card">
+                        <img class="card-img-top" src="img/c.jpg" style="height: 50%;">
+
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Chalé - Família</h3>
+                            <p class="card-subtitle text-muted">2 Quartos (Um com uma cama de casal, o outro uma beliche e uma de solteiro), Um Banheiro Privativo, Chuveiro, TV, Frigobar e Ventilador.</p>
+                            <article class="card-text text-right" style="font-size: x-large;"><small>R$:</small><strong>275,00</strong></article>
+                            <a class="btn btn-warning mb-3" href="reservas.html">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-3 p-3 mt-5 w-25">
+                    <div class="card">
+                        <img class="card-img-top" src="img/58410912_2302810483371909_657293967782532214_n.jpg" style="height: 50%;">
+
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Chalé Casal</h3>
+                            <p class="card-subtitle text-muted">1 Cama de Casal, Ventilador, Frigobar, TV, Banheiro interno e Chuveiro Elétrico.</p>
+                            <article class="card-text text-right" style="font-size: x-large;"><small>R$:</small><strong>150,00</strong></article>
+                            <a class="btn btn-warning mb-3" href="reservas.html">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM Hospedagens -->
+        </div>
+    </main>
+
+    <footer class="text-center footter mt-5">
+
+        <a href="#"><img class="logoFooter" src="img/logo-retangular-semente-de-luz.png"></a>
+        <div class="d-flex">
+            <a href="https://www.facebook.com/pousadasementedeluz" target="_blank"><img class="mx-2" src="img/esboco-do-logotipo-da-carta-social-do-facebook.png" alt="facebook loja"></a>
+            <a href="https://www.instagram.com/pousadasementedeluz/" target="_blank"><img class="mx-2" src="img/logo-do-instagram.png" alt="instagram loja"></a>
+            <a href="https://wa.me/message/Y4LCLD67OI5PD1" target="_blank"><img class="mx-2" src="img/esboco-do-logotipo-do-whatsapp.png" alt="whatsapp loja"></a>
+        </div>
+        <small class="text-center">Desenvolvido por: <br>Aruhan Furtado Mathias</small>
+
+    </footer>
+    <script src="js/JavaScript.js"></script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

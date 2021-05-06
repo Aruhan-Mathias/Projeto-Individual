@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --verde: rgb(50, 185, 45);
+    --branco: #FFF;
+    --verdeClaro: rgb(174, 248, 151);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+
+/* Textos, Bordas e Sublinhado */
+
+.sublime {
+    color: var(--verde);
+    border-bottom: 3px solid var(--verde);
+    border-top: 20px;
+    margin: 0 auto;
+    width: 30%;
+}
+
+.textoBranco {
+    color: var(--branco);
+}
+
+
+/* FIM Textos, Bordas e Sublinhados */
+
+.divFormulario {
+    background-color: var(--verde);
+    border-radius: 20px;
+    color: var(--branco);
+}
+
+.displayNone {
+    display: none;
+}

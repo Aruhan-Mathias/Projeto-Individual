@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- 
+    FOOTER COM CSS: LINHA 148 A 158 (CSS LINKADO NA LINHA 23)
+ -->
+
+<head>
+
+    <title>Semente de Luz</title>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <!-- Teste -->
+    <link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="icon" href="img/logo.png" />
+
+    <link href="/resources/demos/style.css">
+    <!-- Fim Teste -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/reservas.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+
+<body>
+    <!-- Inicio Menu -->
+    <header>
+        <nav class="navbar text-right fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><img src="img/logo-retangular-semente-de-luz.png" style="height: 35px;" alt="logotipo"></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao3">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="input-group d-none d-lg-flex" style="margin-left: 28.5%;width: 20%;">
+                <input class="form-control" type="text" placeholder="Pesquisar">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-success">Ok</button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navegacao3">
+
+                <ul class="navbar-nav ml-auto" style="margin-right: 120px;">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item d-lg-none bg-outline-success active">
+                        <a class="nav-link " href="#" style="color:rgb(38, 187, 38)">Reserve</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#idQuemSomos">Quem Somos</a>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Serviços</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="index.html#idQuartos">Quartos</a>
+                            <a class="dropdown-item" href="holistico.html">Terapia Holística</a>
+                        </div>
+                    </li>
+
+                    <div class="d-none d-lg-flex" id="reserve">
+                        <a class="nav-link" href="">RESERVE</a>
+                    </div>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <!-- Final Menu -->
+
+    <main>
+        <div class="container-fluid">
+            <div class="row text-center destaque">
+                <div class="col-12 mt-5 pt-4 pt-lg-0 pb-4 col-sm-12 col-md-12">
+                    <h1 class="display-4 text-center pt-lg-5 sublime">RESERVAS</h1>
+                    <div class="borderBottom"></div>
+                </div>
+            </div>
+            <div class="row p-5">
+                <div class="col-12 divFormulario p-3">
+                    <form>
+                        <div class="form-row">
+
+                            <div class="form-group col-6">
+                                <!--estava -> input-->
+                                <label for="nome">Nome completo: </label>
+                                <input class="form-control" type="text" name="nome" id="nome" placeholder="Nome completo" required>
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="email">E-mail: </label>
+                                <input class="form-control" type="email" name="email" id="email" placeholder="E-mail" required>
+                            </div>
+
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-6">
+                                <label for="dia">Entrada: </label>
+                                <input class="form-control" type="date" name="Entrada" id="entrada" placeholder="Data de Entrada" required>
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="dia">Saída: </label>
+                                <input class="form-control" type="date" name="Saida" id="saida" placeholder="Data de Saida" required>
+                            </div>
+                        </div>
+
+                        <p class="display-4 text-center">Quartos: <br></p>
+
+                        <div class="form-row text-center">
+
+                            <div class="form-group col-12">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline1" class="custom-control-input" name="customRadioInline1">
+                                    <label class="custom-control-label" for="customRadioInline1">Chalé - 1 Cama</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="customRadio2" name="customRadioInline1">
+                                    <label class="custom-control-label" for="customRadio2">Chelé - Duas Camas</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline3" class="custom-control-input" name="customRadioInline1">
+                                    <label class="custom-control-label" for="customRadioInline3">Bangalô Superior</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="customRadio4" name="customRadioInline1">
+                                    <label class="custom-control-label" for="customRadio4">Chelé - Família</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-12">
+                                <label class="text-center lead bg-warning w-100" style="color:black;">Cadastre seu CNP para obter descontos exclusivos:</label>
+                                <select class="form-control" id="select" required>
+                                    <option class="active" value="0">Escolher...</option>
+                                    <option value="1">Não Quero, Obrigado.</option>
+                                    <option value="2">Quero.</option>
+                                </select>
+                                <div class="cnpj d-none">
+                                    <input class="form-control" type="text" id="cnpj" maxlength="15" onblur="validarCNPJ(this.value)" name="CNPJ" placeholder="Digite seu CNPJ" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-block btn-outline-light mb-lg-2" type="submit">ENVIAR</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center footter">
+
+        <a href="index.html"><img class="logoFooter" src="img/logo-retangular-semente-de-luz.png"></a>
+        <div class="d-flex">
+            <a href="https://www.facebook.com/pousadasementedeluz" target="_blank"><img class="mx-2" src="img/esboco-do-logotipo-da-carta-social-do-facebook.png" alt="facebook loja"></a>
+            <a href="https://www.instagram.com/pousadasementedeluz/" target="_blank"><img class="mx-2" src="img/logo-do-instagram.png" alt="instagram loja"></a>
+            <a href="https://wa.me/message/Y4LCLD67OI5PD1" target="_blank"><img class="mx-2" src="img/esboco-do-logotipo-do-whatsapp.png" alt="whatsapp loja"></a>
+        </div>
+        <small class="text-center">Desenvolvido por: <br>Aruhan Furtado Mathias</small>
+
+    </footer>
+
+    <script src="js/reservas.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

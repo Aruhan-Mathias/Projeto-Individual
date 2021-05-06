@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --verde: rgb(50, 185, 45);
+    --branco: #FFF;
+    --verdeClaro: rgb(57, 168, 23);
+}
+
+body,
+header {
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.textoBranco {
+    color: var(--branco);
+}
+
+
+/* scoll */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Destaques */
+
+.sublime {
+    color: var(--verde);
+    margin: 0 auto;
+}
+
+.borderBottom {
+    background-color: var(--verde);
+    height: 3px;
+    width: 25%;
+    margin: 0 auto;
+}
+
+.destaques {
+    padding: 25px;
+    height: 500px;
+}
+
+.destaques img {
+    border-radius: 30px 0 30px 0;
+    opacity: 0.9;
+    transition: 0.5;
+}
+
+.destaques img:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.destaques p {
+    background-color: rgba(146, 138, 138, 0.356);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.507);
+    color: rgba(13, 255, 5, 0.938);
+    text-align: center;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 1px solid var(--verde);
+    position: absolute;
+    padding: 15px;
+    z-index: 2;
+}
+
+.destaques .um {
+    top: 160px;
+    left: 25%;
+}
+
+.destaques .dois {
+    top: 160px;
+    font-size: 35px;
+    left: 8%;
+    width: 84%;
+}
+
+.destaques .tres {
+    top: 160px;
+    left: 28%;
+}
+
+
+/* Fim Destaques */
+
+
+/* Animação Seta */
+
+#setaTopo {
+    position: fixed;
+    opacity: 0.8;
+    right: 20px;
+    bottom: 100px;
+    z-index: 3;
+}
+
+#setaTopo:hover {
+    opacity: 1;
+}
+
+.anime_inicial {
+    opacity: 0;
+    transform: translate3d(-100px, 0, 0);
+    transition-duration: 3s;
+}
+
+.anime_final {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+
+/* FIM Animação Seta */
+
+
+/* Inicio Quem Somos */
+
+.quemSomos {
+    margin: 0 auto;
+}
+
+.quemSomosBg {
+    background-color: var(--verde);
+    padding: 30px;
+    height: 600px;
+}
+
+
+/* FIM Quem Somos */
+
+.cards .col-12 {
+    padding: 0;
+}
+
+@media (max-width: 992px) {
+    .destaques .um {
+        top: 160px;
+        left: 33%;
+    }
+    .destaques .tres {
+        left: 33%
+    }
+    .quemSomosBg {
+        height: 100%;
+    }
+    .dispEndereco1 {
+        display: none;
+    }
+    .card {
+        height: 100%;
+    }
+    .card-title {
+        font-size: 20px;
+    }
+    .card-body {
+        text-align: justify;
+    }
+}
+
+@media (min-width: 992px) {
+    .dispEndereco2 {
+        display: none;
+    }
+}
+
+@media (max-width:400px) {
+    .destaques .um {
+        top: 160px;
+        left: 25%;
+    }
+    .destaques .tres {
+        left: 25%
+    }
+}

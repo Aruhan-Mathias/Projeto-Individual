@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- 
+    VALIDAÇÃO CNPJ: PÁGINA RESERVAS (JS LINKADO NO HEAD)
+    SETA LINHA: 198
+    ARTICLE UTILIZADO NA LINHA 158, 169 180 E 191 (VALOR DE CADA QUARTO DA POUSADA)
+    FOOTER COM CSS: LINHA 204 A 211 (CSS LINKADO NA LINHA 23)
+ -->
+
+<head>
+
+    <title>Semente de Luz</title>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <!-- Teste -->
+    <link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="icon" href="img/logo.png" />
+    <link href="/resources/demos/style.css">
+    <!-- Fim Teste -->
+
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/holistico.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+
+<body>
+    <!-- Inicio Menu -->
+    <header>
+        <nav class="navbar text-right fixed-top navbar-expand-xl navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><img src="img/logo-retangular-semente-de-luz.png" style="height: 35px;" alt="logotipo"></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao3">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="input-group d-none d-xl-flex" style="margin-left: 28.5%;width: 15%;">
+                <input class="form-control" type="text" placeholder="Pesquisar">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-success">Ok</button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navegacao3">
+
+                <ul class="navbar-nav ml-auto" style="margin-right: 120px;">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item d-lg-none bg-outline-success active">
+                        <a class="nav-link " href="reservas.html" style="color:rgb(38, 187, 38)">Reserve</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#idQuemSomos">Quem Somos</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Serviços</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="index.html#idQuartos">Quartos</a>
+                            <a class="dropdown-item" href="holistico.html">Terapia Holística</a>
+                        </div>
+                    </li>
+
+                    <div class="d-none d-lg-flex" id="reserve">
+                        <a class="nav-link" href="reservas.html">RESERVE</a>
+                    </div>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <!-- Final Menu -->
+    <main>
+
+        <div class="container-fluid">
+
+            <div class="row text-center destaque">
+                <div class="col-12 mt-5 pt-4 pt-lg-0 pb-4 col-sm-12 col-md-12">
+                    <h1 class="display-4 text-center pt-lg-3 sublime"> Espaço Holístico</h1>
+                    <div class="borderBottom"></div>
+                </div>
+            </div>
+
+
+            <!-- Inicio Carrossel -->
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="carousel slide" id="carousel-indicadores" data-ride="carousel">
+
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-indicadores" data-slide-to="0"></li>
+                            <li data-target="#carousel-indicadores" data-slide-to="1"></li>
+                            <li data-target="#carousel-indicadores" data-slide-to="2"></li>
+                            <li data-target="#carousel-indicadores" data-slide-to="3"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-fluid w-100" src="img/buda.jpg" style="height: 500px;">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid w-100" src="img/holistico02.jpg" style="height: 500px;">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid w-100" src="img/holistico03.jpg" style="height: 500px;">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid w-100" src="img/holistico04.jpg" style="height: 500px;">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 text-center bordaVerde bgAmarelo textoColorido">
+                    <h1 class="display-4 text-center pt-3 pt-sm-3">Acomodações</h1>
+                    <div class="align-content-center  pb-3">
+
+                        <h2 class="mt-lg-5">Nosso espaço terapêutico espera por você. Agende já seu momento de cuidado! Muita paz, amor, harmonia e espiritualidade por aqui! </h2>
+
+
+                        <a class="btn btn-block btn-success mt-5 mt-lg-5 mt-lg-3 bordaVerde" href="reservas.html"><strong class="textoBranco">ADICIONAR AO PACOTE</strong></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center destaque">
+                <div class="col-12 mt-3 pt-2 pt-lg-0 pb-4 col-sm-12 col-md-12">
+                    <h1 class="display-4 text-left sublime">O que Andam Dizendo?</h1>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-12 col-md-4 p-sm-5 w-25">
+                    <div class="card mt-4 bordaVerde">
+                        <img class="img-fluid p-5" src="img/usuarioYellow.png" style="height: 50%;">
+
+                        <h5 class="card-header text-center">Hóspede</h5>
+                        <blockquote class="blockquote mb-8">
+                            <p>“Ambiente confortável e aconchegante, atendimento de primeira e além de estar perto do Parque Nacional de Ubajara.”</p>
+                            <footer class="blockquote-footer pl-3"> Samuel <br><small>18 de Janeiro 2021</small></footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 p-sm-5 w-25">
+                    <div class="card mt-4 bordaVerde">
+                        <img class="img-fluid p-5" src="img/usuarioYellow.png" style="height: 50%;">
+
+                        <h5 class="card-header text-center">Hóspede</h5>
+                        <blockquote class="blockquote mb-8">
+                            <p>“Funcionários bastante solícitos, nos ajudaram em nossas demandas, eu e marido nos sentimos bem acolhidos e tem um café da manhã muito gostoso!”</p>
+                            <footer class="blockquote-footer pl-3"> Kalécia <br><small>25 de Fevereiro 2021</small></footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 p-sm-5 w-25">
+                    <div class="card mt-4 bordaVerde">
+                        <img class="img-fluid p-5" src="img/usuarioYellow.png" style="height: 50%;">
+
+                        <h5 class="card-header text-center">Hóspede</h5>
+                        <blockquote class="blockquote mb-8">
+                            <p>“Recepção e flexibilidade dos funcionários, a possibilidade de usar a cozinha em comum, ótimo café da manhã.”</p>
+                            <footer class="blockquote-footer pl-3">Alan<br><small>30 de Março 2021</small></footer>
+                    </div>
+                    </blockquote>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- FIM Carrossel -->
+    </main>
+    <footer class="text-center footter mt-5">
+
+        <a href="#"><img class="logoFooter" src="img/logo-retangular-semente-de-luz.png"></a>
+        <div class="d-flex">
+            <a href="https://www.facebook.com/pousadasementedeluz" target="_blank"><img class="mx-2" src="img/esboco-do-logotipo-da-carta-social-do-facebook.png" alt="facebook loja"></a>
+            <a href="https://www.instagram.com/pousadasementedeluz/" target="_blank"><img class="mx-2" src="img/logo-do-instagram.png" alt="instagram loja"></a>
+            <a href="https://wa.me/message/Y4LCLD67OI5PD1" target="_blank"><img class="mx-2" src="img/esboco-do-logotipo-do-whatsapp.png" alt="whatsapp loja"></a>
+        </div>
+        <small class="text-center">Desenvolvido por: <br>Aruhan Furtado Mathias</small>
+
+    </footer>
+    <script src="js/JavaScript.js"></script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
